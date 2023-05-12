@@ -1,0 +1,88 @@
+:root {
+    --primaryColor: #00eaff;
+    --primaryHouver: hsl(185, 92%, 41%);
+    --secundaryColor: rgb(150, 162, 188);
+    --paragraphColor: rgb(127, 127, 175);
+    --BgColor: #031a30;
+
+    --formColor: rgb(2, 15, 29);
+    --projectCardColor: #072340;
+    --textColor: #dae4fb;
+    --headerHeight: 3rem;
+  }
+.about{}
+     .sectionContainer{
+
+  }
+  .textSection h4{
+    color: var(--secundaryColor);
+    font-size: 1.1rem;
+    max-width: 100%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: auto;
+  }
+  .aboutBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background: var(--primaryColor);
+    width: max-content;
+    padding: 10px 15px;
+  }
+
+&:hover{
+    background: var(--primaryHouver);
+}
+a{
+    color: var(--projectCardColor);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+a:hover{
+    color: var(--textColor);
+}
+.aboutImgDiv{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 2rem auto 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    border: 2px dashed var(--primaryColor);
+}
+
+.aboutImg{
+    width: 215px;
+    object-fit: cover;
+    align-self: center;
+   justify-self: center;
+}
+.aboutImgDiv::before{
+    content:"Houver Me";
+    font-size: 1.6rem;
+    color: var(--BgColor);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inconsolata", monospace;
+    justify-self: center;
+    justify-self: center;
+    background-color: var(--primaryColor);
+    height: 97%;
+    width: 97%;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .3rem;
+    mix-blend-mode: screen;
+}
+
+.aboutImgDiv:hover.aboutImgDiv:before{
+
+}

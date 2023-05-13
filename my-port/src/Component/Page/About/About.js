@@ -8,7 +8,6 @@ import Sandra from  "../sandra.jpg"
 const About = () => {
   return (
   <section id="about" className='about sectionContainer'>
- About Componenent
  <div className='sectionTitle'>
   <span className='titleNumber'> 01.</span>
   <h5 className='titleText'> About Me
@@ -38,4 +37,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default About
